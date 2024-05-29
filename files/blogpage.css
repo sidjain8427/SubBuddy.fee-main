@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --colorblack: #2b2b2b;
+  --colorgreen: #00838c;
+  --colorlightgreen: #00a4a6;
+  --lightblue: rgb(216, 239, 239);
+  --colorblue2: #ddeaf8;
+  --colorgrey: #e8eaeb;
+  --colorblue: #aeeced;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+body {
+  background-color: rgb(241, 243, 245);
+  /* display: flex; */
+}
+
+button {
+  width: fit-content;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease-out 0s !important;
+}
+.header-main {
+  width: 100vw;
+  height: 50vh;
+  color: var(--colorgrey);
+  background-color: #121212;
+  /* background-color: #00a4a6; */
+  /* border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%; */
+  /* border-bottom: 0;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-heading {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  text-align: center;
+  gap: 10px;
+}
+.header-heading img {
+  width: 400px;
+  transition: all 0.3s ease-out 0s !important;
+}
+.header-heading img:hover {
+  transform: translateY(-10px);
+}
+.h1 {
+  font-size: 50px;
+  line-height: 56px;
+}
+.heading1 {
+  color: var(--colorlightgreen);
+}
+
+.header-search {
+  margin-top: -20px;
+  width: 50%;
+}
+
+.search {
+  flex: 70%;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+}
+.search input {
+  width: 75%;
+  height: 55px;
+  border: none;
+  padding-left: 20px;
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.searchbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-color: var(--colorgreen);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.searchbutton:hover {
+  background-color: var(--colorlightgreen);
+}
+
+.header-scroll {
+  display: flex;
+  height: 60px;
+  width: 100vw;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+.Scroll-btn {
+  border-style: none;
+  border-radius: 12px;
+  height: 40px;
+  width: 120px;
+  background-color: black;
+  color: white;
+}
+.Scroll-btn:hover {
+  background-color: var(--colorgreen);
+}
+.main-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.card-container {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Add negative margin to push cards away from the left edge */
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.cardheader {
+  display: flex;
+  align-items: center;
+}
+.card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin: 20px;
+  flex: 0 0 auto;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-heading-container {
+  flex-grow: 1; /* Allow heading to take remaining space */
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+  transition: color 0.3s ease-in-out;
+}
+
+.card-heading:hover {
+  color: #007bff;
+}
+
+.card-description {
+  color: #666;
+  margin: 22px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+  margin-left: 100px;
+}
+
+.card-date {
+  display: flex; /* Display elements in a row */
+  align-items: center; /* Vertically align elements */
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.card-date .duration {
+  margin-left: 6px; /* Add space between date and duration */
+  color: #666;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.card-date .green-dash {
+  margin: 0 10px; /* Adjust space around the dash */
+  color: #4caf50; /* Green color */
+  font-weight: bold; /* Make the dash more bold */
+  font-size: 16px; /* Increase font size for the dash */
+}
+.carddis {
+  width: 100%;
+  text-align: center;
+}
+.buttocont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  font-size: medium !important;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for the buttons */
+}
+
+.card-button-left {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.card-button-left:hover {
+  background-color: #00838c; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+.card-button-right {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.card-button-right:hover {
+  background-color: rgb(255, 255, 152); /* Change background color on hover */
+  color: #000000; /* Change text color on hover */
+}
+
+.card-button-secondary {
+  background-color: #007bff;
+}
+
+.card-button-secondary:hover {
+  background-color: #007a25;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+  margin-top: 50px;
+}
+.sidebar h1 {
+  font-size: 30px;
+}
+.contdiv1 div {
+  padding: 20px 0px;
+  border-bottom: solid 1.5px rgb(212, 212, 212);
+  transition: all 0.3s ease-out 0s !important;
+}
+.contdiv1 div:hover {
+  color: #00a4a6;
+}
+.tagcloud {
+  margin-top: 50px;
+}
+.tagbox {
+  width: 400px;
+  margin-top: 30px;
+}
+.tagbox button {
+  margin: 5px 10px;
+}
+.endingbuttons {
+  margin: 50px auto 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.endingbuttons p {
+  margin-right: 40px;
+}
+.endingbuttons button {
+  background-color: #00838c;
+  width: 120px;
+  font-size: large;
+}
+.endingbuttons button:hover {
+  background-color: #00a4a6;
+}

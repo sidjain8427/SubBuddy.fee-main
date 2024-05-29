@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --colorblack: #2b2b2b;
+  --colorgreen: #00838c;
+  --colorlightgreen: #00a4a6;
+  --lightblue: rgb(216, 239, 239);
+  --colorblue2: #ddeaf8;
+  --colorgrey: #e8eaeb;
+}
+a {
+  text-decoration: none;
+  color: unset !important;
+}
+a:visited {
+  color: white;
+}
+body {
+  background-color: rgb(241, 243, 245);
+  height: 135vh;
+}
+.nav-button {
+  width: fit-content;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease-out 0s !important;
+}
+
+nav {
+  z-index: 2;
+  height: 60px;
+  width: 100vw;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+}
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+}
+.navigation div,
+.secondarycont div {
+  padding: 7px;
+  border-radius: 5px;
+  margin: auto 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 50px;
+}
+.secondarycont {
+  display: flex;
+  justify-content: end;
+  width: 35%;
+  color: white;
+}
+.hover1:hover {
+  cursor: pointer;
+  background-color: var(--colorblack);
+}
+
+.header-main {
+  width: 100vw;
+  height: 40vh;
+  color: var(--colorgrey);
+  background-color: var(--colorblack);
+  /* background-color: #00a4a6; */
+  /* border-bottom-left-radius: 33%;
+  border-bottom-right-radius: 33%; */
+  border-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+.header-heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  gap: 10px;
+}
+
+.heading1 {
+  color: var(--colorgreen);
+  font-size: 30px;
+  line-height: 56px;
+}
+
+.header-search {
+  width: 40%;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle {
+  border-radius: 49%;
+  width: 30px;
+  height: 15px;
+  padding: 6px;
+  background: #fff;
+  border: 3px solid #000;
+  color: #000;
+  text-align: center;
+  font: 15px Arial, sans-serif;
+  background-color: var(--colorlightgreen);
+  margin-bottom: 35%;
+}
+.circle:hover {
+  background-color: var(--colorblue2);
+}
+.Main {
+  height: 8%;
+  width: 30%;
+  display: flex;
+  /* background-color: blue; */
+  gap: 10px;
+  margin-top: -40px;
+}
+.centerposdiv {
+  margin-top: 50px;
+  display: flex;
+}
+.login-main {
+  height: 18%;
+  width: 45%;
+  position: absolute;
+  bottom: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: -10% 0% 20% 10%;
+  border-radius: 5px;
+}
+
+.login-content {
+  margin-bottom: 3%;
+  font-weight: 300;
+  font-size: 18px;
+}
+.login-btn {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  margin-bottom: 8%;
+  margin-left: -50px;
+  width: 100px;
+  height: 40px;
+}
+.login-btn:hover {
+  background-color: var(--colorlightgreen);
+}
+
+.payment-main {
+  border-radius: 15px;
+  width: 670px;
+  height: 480px;
+  margin: 11px 150px 50px 180px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 #c9c9c9, 0 4px 8px 0 #30475e;
+  color: #000;
+  background: white;
+  position: absolute;
+}
+.heading1 {
+  font-size: 50px;
+}
+h1 {
+  text-align: center;
+}
+.box {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin: 10px 0 15px 0;
+  background-color: white;
+  border: 1px solid black;
+}
+.div1 {
+  display: inline-block;
+}
+.box2 {
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0 15px 0;
+  border: 1px solid black;
+  background-color: white;
+}
+.btn {
+  width: 49%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 18px;
+  color: black;
+}
+.btn:hover {
+  background-color: var(--colorgreen);
+}
+
+.pricing-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  left: 60%;
+}
+.pricing-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.pricing-subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.pricing-price {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.pricing-fee {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+.buy-button {
+  background-color: #040404;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buy-button:hover {
+  background-color: var(--colorlightgreen);
+}
